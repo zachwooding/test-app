@@ -1,0 +1,52 @@
+/* src/pages/LandingPage.module.css */
+.landingPage {
+    background-image: url('garden.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Add padding to ensure content is not too close to the edges */
+  }
+  
+  .contentCard {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 40px; /* Increase padding for a more spacious look */
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contentCard h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Adjust color for better readability */
+  }
+  
+  .contentCard p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555; /* Softer color for the paragraph */
+  }
+  
+  .getStartedButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #007bff; /* Primary color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .getStartedButton:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  

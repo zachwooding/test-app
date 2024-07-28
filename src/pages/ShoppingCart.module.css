@@ -1,0 +1,134 @@
+/* src/pages/ShoppingCart.module.css */
+.shoppingCartPage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.shoppingCartTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cartItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartItemImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cartItemDetails {
+  padding: 10px;
+}
+
+.cartItemActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cartItemActions button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartItemActions button:hover {
+  background-color: #218838;
+}
+
+.cartItemActions button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.removeItemButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeItemButton:hover {
+  background-color: #c82333;
+}
+
+.cartTotal {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.cartTotal h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.cartButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.keepShoppingButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.keepShoppingButton:hover {
+  background-color: #0056b3;
+}
+
+.checkoutButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkoutButton:hover {
+  background-color: #218838;
+}
